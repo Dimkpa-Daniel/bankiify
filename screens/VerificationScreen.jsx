@@ -9,7 +9,7 @@ const VerificationScreen = () => {
   const naviagtion = useNavigation();
 
   const handleNavigation = () => {
-    naviagtion.navigate("home");
+    naviagtion.navigate("bottomTab");
   };
   return (
     <View style={styles.container}>
