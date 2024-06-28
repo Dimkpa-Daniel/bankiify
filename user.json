@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Maria", "last": "Mortensen" },
+      "location": {
+        "street": { "number": 2334, "name": "Glentevej" },
+        "city": "Vipperød",
+        "state": "Hovedstaden",
+        "country": "Denmark",
+        "postcode": 40370,
+        "coordinates": { "latitude": "-40.5292", "longitude": "126.4359" },
+        "timezone": {
+          "offset": "+9:00",
+          "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+        }
+      },
+      "email": "maria.mortensen@example.com",
+      "login": {
+        "uuid": "a84e33f2-5e8e-429a-b85d-0cffd58c1133",
+        "username": "ticklishbear829",
+        "password": "fishfish",
+        "salt": "6H3kKNnH",
+        "md5": "f3981b0806a2762ea77a9000993dd2af",
+        "sha1": "7dd8070eb4c33cb18e654400a2c46e8474dddf84",
+        "sha256": "a595c1d6365d87357dffc6a9fbf810452fd8f8183189f07c2c497c13ca709d7f"
+      },
+      "dob": { "date": "1998-12-26T16:10:19.624Z", "age": 25 },
+      "registered": { "date": "2021-06-04T21:02:07.504Z", "age": 3 },
+      "phone": "35810216",
+      "cell": "27082527",
+      "id": { "name": "CPR", "value": "261298-5818" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/80.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/80.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/80.jpg"
+      },
+      "nat": "DK"
+    }
+  ],
+  "info": {
+    "seed": "d09cc60a5ea5f40d",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

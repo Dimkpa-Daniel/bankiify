@@ -13,8 +13,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
+      <Stack.Navigator >
+        {/* <Stack.Screen
           name="onboarding"
           component={OnboardingScreen}
           options={{ headerShown: false }}
@@ -30,7 +30,7 @@ export default function App() {
         name="verification"
         component={VerificationScreen}
         options={{headerShown: false}}
-        />
+        /> */}
 
         <Stack.Screen
           name="bottomTab"
