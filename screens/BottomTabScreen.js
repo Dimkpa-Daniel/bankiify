@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialIcons } from "@expo/vector-icons";
 import HomeScreen from "./BottomTabScreens/HomeScreen";
 import { StyleSheet, Text } from "react-native";
-import Services from "./BottomTabScreens/Services";
-import Transactions from "./BottomTabScreens/Transactions";
+import UsersBio from "./BottomTabScreens/UsersBio";
+import Location from "./BottomTabScreens/Location";
 import Profile from "./BottomTabScreens/Profile";
 
 const Tab = createBottomTabNavigator();
@@ -23,7 +23,7 @@ const BottomTabScreen = () => {
       })}
     >
       <Tab.Screen
-        name="home"
+        name="Home"
         component={HomeScreen}
         options={{
           headerShown: false,
@@ -38,13 +38,13 @@ const BottomTabScreen = () => {
       />
 
       <Tab.Screen
-        name="services"
-        component={Services}
+        name="Users"
+        component={UsersBio}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <MaterialIcons
-              name="settings"
+              name="contacts"
               size={24}
               color={focused ? "red" : "gray"}
             />
@@ -52,13 +52,13 @@ const BottomTabScreen = () => {
         }}
       />
       <Tab.Screen
-        name="transaction"
-        component={Transactions}
+        name="Location"
+        component={Location}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <MaterialIcons
-              name="format-list-bulleted"
+              name="pin-drop"
               size={24}
               color={focused ? "red" : "gray"}
             />
@@ -66,7 +66,7 @@ const BottomTabScreen = () => {
         }}
       />
       <Tab.Screen
-        name="profile"
+        name="Profile"
         component={Profile}
         options={{
           headerShown: false,

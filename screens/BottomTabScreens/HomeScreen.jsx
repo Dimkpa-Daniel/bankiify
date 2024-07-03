@@ -18,7 +18,7 @@ const HomeScreen = () => {
     setError(null);
 
     try {
-      const response = await fetch('https://randomuser.me/api/?results=8');
+      const response = await fetch('https://randomuser.me/api/?results=100');
       if(!response.ok){
         throw new Error("Network response was not ok!")
       }
@@ -58,7 +58,7 @@ const HomeScreen = () => {
           paddingHorizontal: 20,
         }}
       >
-        <Image source={{uri: data[0].picture.large}} style={{width: 50, height: 50, borderRadius: 50}} />
+        <Image source={{uri: data[0]?.picture?.large}} style={{width: 50, height: 50, borderRadius: 50}} />
       </View>
       <Text
         style={{
@@ -68,7 +68,7 @@ const HomeScreen = () => {
           textAlign: "center",
         }}
       >
-       {data[0].name.first}   {data[0].name.last}
+       {data[0]?.name?.first}   {data[0]?.name?.last}
       </Text>
       <Text
         style={{
@@ -78,7 +78,7 @@ const HomeScreen = () => {
           textAlign: "center",
         }}
       >
-        {data[0].location.country}
+        {data[0]?.location?.country}
       </Text>
 
       {/* THE WHITE SECTION OF THE HOMEPAGE */}
@@ -159,7 +159,7 @@ const HomeScreen = () => {
             {data.slice(0, 6).map((data, index)=>(
               <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingBottom:5, borderBottomWidth: 1, borderBottomColor: 'gray'}}>
               <Image
-                source={{uri: data.picture.large}}
+                source={{uri: data?.picture?.large}}
                 style={{ width: 40, height: 40, borderRadius: 10 }}
               />
               <Text style={{ color: "black", fontSize: 16, fontWeight: '800', textAlign: 'center' }}>{data.dob.age}</Text>
@@ -181,11 +181,7 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     paddingTop: 60,
-    // paddingHorizontal: 20,
     backgroundColor: "#F12B2B",
     height: "100%",
-    // flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center'
   },
 });
