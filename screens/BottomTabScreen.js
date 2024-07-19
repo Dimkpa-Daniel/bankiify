@@ -6,6 +6,7 @@ import { StyleSheet, Text } from "react-native";
 import UsersBio from "./BottomTabScreens/UsersBio";
 import Location from "./BottomTabScreens/Location";
 import Profile from "./BottomTabScreens/Profile";
+import MusicApp from "./BottomTabScreens/MusicApp";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ const BottomTabScreen = () => {
         }
       })}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
@@ -68,6 +69,20 @@ const BottomTabScreen = () => {
       <Tab.Screen
         name="Profile"
         component={Profile}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialIcons
+              name="person"
+              size={24}
+              color={focused ? "red" : "gray"}
+            />
+          ),
+        }}
+      /> */}
+      <Tab.Screen
+        name="Music"
+        component={MusicApp}
         options={{
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (

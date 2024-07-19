@@ -23,7 +23,7 @@ const HomeScreen = () => {
         throw new Error("Network response was not ok!")
       }
       const data = await response.json();
-      console.log('DATA', data.results)
+      // console.log('DATA', data.results)
       setData(data.results);
     } catch (error) {
       setError(error.message)
@@ -31,7 +31,7 @@ const HomeScreen = () => {
     }finally{
       setLoading(false);
     }
-  }
+  }  
 
 
   useEffect(()=>{
